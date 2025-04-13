@@ -29,7 +29,7 @@
                     <ul class="navbar-nav flex-grow-1">
                         @if (User.Identity.IsAuthenticated)
                         {
-                            <a class="nav-link text-black">
+                            <a asp-controller="Account" asp-action="Logout" class="nav-link text-black">
                                 @User.Identity.Name
                                 (çıkış yap)
                             </a>
